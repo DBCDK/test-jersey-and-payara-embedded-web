@@ -10,6 +10,7 @@ xmlstarlet ed -N pom=http://maven.apache.org/POM/4.0.0 \
 	-d '/pom:project/pom:build/pom:pluginManagement' \
 	-d '/pom:project/pom:distributionManagement' \
 	-d '/pom:project/pom:dependencyManagement' \
+	-d '/pom:project/pom:pluginRepositories' \
 	-d '/pom:project/pom:repositories' effective-pom.xml | \
     perl -p -e 's{'"$PWD/"'}{}g' > pom.xml
 
