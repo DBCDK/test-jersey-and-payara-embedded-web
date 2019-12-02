@@ -1,4 +1,4 @@
-# Jerset client in integraiontest
+# Jerset client in integrationtest
 
 Issue using `fish.payara.extras:payara-embedded-web:5.193.1` and `org.glassfish.jersey.core:jersey-client:2.29`
 
@@ -32,3 +32,5 @@ However the test goes through
 If you revert to `payara-embedded-web:5.193` and `jersey-client:2.27` (and dependencies), it goes through too.
 Any one isn't enough though.
 
+
+Using `payara-embedded-all` instead doesn't change anything.
